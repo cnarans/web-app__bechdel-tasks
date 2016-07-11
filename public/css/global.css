@@ -1,50 +1,58 @@
-.bechdel-test-info {
-  background-color: rgb(27, 28, 29);
-  color: #999;
-  padding-top: 20px;
-  padding-bottom: 20px;
-}
-.bechdel-test-info__lines{
-  line-height: 1.5;
+body {
+  display:flex;
+  flex-direction:column;
+  font-family:sans-serif;
+  margin:0 !important;
+  padding:0 !important;
 }
 
-.movie-result {
-  padding-top: 20px;
-}
-.bollywood-title{
-  margin-bottom: 30px;
-}
-.bollywood-title.bollywood-title--no-margin-top{
-  margin-top: 0;
-}
-.get-another-movie{
-  margin-top: 30px;
+body a{
+  text-decoration:none;
 }
 
-.search-form-actions{
-  clear: both;
-  padding-top: 20px;
-}
-.search-form-actions__button{
-  width: 30%;
-}
-.search-form-input-margin{
-  margin-left: 10px;
-  margin-right: 10px;
+.header {
+  background:white;
+  display:flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
-/* todo this gets ugly on small screens */
-.block-bollywood-bg{
-  background: url(/images/shree-420.jpg) center -240px;
-  background-size: cover;
-  border-top: 1px solid #666;
-}
-.block-bollywood-lead{
-  text-shadow: 17px 0px 10px #000;
+.header a{
+  color:black;
 }
 
-.bechdel-status{
-  margin-top: 51px;
-  color: #999;
-  font-size: 20px;
+.header li{
+  display:inline;
+  padding:10px;
+}
+
+.nav {
+  display:flex;
+}
+
+.bechdel {
+  background:#151616;
+  color:lightgray;
+}
+
+.bechdel-text {
+  margin-left:150px;
+}
+
+.main {
+  background:black;
+  color:white;
+}
+
+.main-movie {
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+}
+
+.search {
+  background-image:url("/old-movie.jpg");
+  display:flex;
+  flex-direction:column;
+  align-items: center;
 }

@@ -1,5 +1,5 @@
-<div>
-  <div class="container">
+<div class="bechdel">
+  <div class="bechdel-text">
     <h3>The Bechdel Test</h3>
 
     <h4>
@@ -14,12 +14,10 @@
   </div>
 </div>
 
-<div>
-  <div>
-    <h1>
-      <%= @new_movie.title %><br>
-      <small>directed by <%= @new_movie.director %></small>
-    </h1>
+<div class="main">
+  <div class="main-movie">
+    <h1><%= @new_movie.title %></h1>
+    <span>directed by <%= @new_movie.director %></span>
 
     <a href="movies/<%= @new_movie.id %>/view">
       <img src="<%= @new_movie.image %>" alt="<%=@new_movie.title%>">

@@ -7,14 +7,18 @@
     <meta name="description" content="">
     <meta name="keywords" content="">
     <meta name="author" content="">
+    <link rel="stylesheet" type="text/css" href="/css/global.css">
 
     <title>Bollywood Bechdel</title>
   </head>
 
 <body>
 
-<nav>
-  <div class="container">
+<div class = "header">
+  <div class="pagetitle">
+    Bollywood Bechdel
+  </div>
+  <div class="nav">
     <ul>
       <li>
         <a href="/results/list">Bechdel Gallery</a>
@@ -43,7 +47,7 @@
       <% end %>
     </ul>
   </div>
-</nav>
+</div>
 
 <% if @error != nil %>
   <div class="container">
@@ -60,8 +64,7 @@
 <!-- Then the combined layout + view is sent back to the client. -->
 <%= yield %>
 
-<div>
-  <div class="container">
+<div class="search">
     <p>
       Find a Bollywood movie with <strong>strong</strong> female characters.
     </p>
@@ -75,20 +78,16 @@
 
       <input type="text" name="search" placeholder="search for a movie">
 
-      <div>
         <label>
           <input type="checkbox" name="passes_bechdel" value="1">
           Passes Bechdel Test
         </label>
-      </div>
-
       <div>
         <button>
           Search
         </button>
       </div>
     </form>
-  </div>
 </div>
 
 </body>
