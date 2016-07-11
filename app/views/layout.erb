@@ -64,26 +64,28 @@
 <!-- Then the combined layout + view is sent back to the client. -->
 <%= yield %>
 
-<div class="search">
+<div class="bottom">
     <p>
       Find a Bollywood movie with <strong>strong</strong> female characters.
     </p>
 
-    <form action="/movies/search" method="post">
-      <select name="search_category">
-        <option selected disabled>Choose category</option>
-        <option value= "title">Title</option>
-        <option value= "director">Director</option>
-      </select>
+    <form action="/movies/search" method="post" class="search">
+      <div>
+        <select name="search_category">
+          <option selected disabled>Choose category</option>
+          <option value= "title">Title</option>
+          <option value= "director">Director</option>
+        </select>
 
-      <input type="text" name="search" placeholder="search for a movie">
+        <input type="text" name="search" placeholder="search for a movie">
 
         <label>
           <input type="checkbox" name="passes_bechdel" value="1">
           Passes Bechdel Test
         </label>
+      </div>
       <div>
-        <button>
+        <button class = "search__button">
           Search
         </button>
       </div>

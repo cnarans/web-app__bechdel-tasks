@@ -32,7 +32,7 @@ body a{
 
 .bechdel {
   background:#151616;
-  color:lightgray;
+  color:darkgray;
 }
 
 .bechdel-text {
@@ -44,15 +44,60 @@ body a{
   color:white;
 }
 
-.main-movie {
+.movie {
+  margin:100px;
   display:flex;
   flex-direction:column;
   align-items:center;
+  justify-content: space-between;
+  height:100%;
 }
 
-.search {
+.movie h1{
+  margin-top:0px;
+  margin-bottom:5px;
+}
+
+.movie__image {
+  padding:30px;
+}
+
+.movie__button{
+
+}
+
+.movie__button input{
+  background:transparent;
+  color:darkgray;
+  border-radius:5px;
+  border-color:darkgray;
+  border-style:solid;
+  border-width:1px;
+  padding:10px 50px;
+}
+
+.bottom {
+  color:white;
   background-image:url("/old-movie.jpg");
+  background-size: 100vw;
+  background-position:50% 25%;
   display:flex;
   flex-direction:column;
   align-items: center;
+  padding:100px;
+}
+
+.search {
+  display:flex;
+  flex-direction:column;
+  align-items: center;
+}
+
+.search__button {
+  background-color:#55488C;
+  color:white;
+  border:none;
+  border-radius:5px;
+  padding: 5px 100px;
+  margin-top:15px;
 }
